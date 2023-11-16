@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta description-->
+    <meta name="description" content="Forsiden i mobile first projektet. SchweizerBageriets forside, som viser kager, kaffe, medarbejdere og den lange historie der er forbundet med dem.">
+    <!--meta description slut-->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/Schweizerbageriet-favicon.png">
+    <title>Forside | Mobile first</title>
+</head>
+<body>
+
+        <header>
+
+            <div class="burger-menu">
+                
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+        
+
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><img src="img/Schweizerbagerietcopy.png" alt="logo"></a>
+            </div>
+
+
+            <nav>
+    
+                    <ul>
+                    <div class="menu_fold_ud_venstre">
+                    <li><a href="kager.html"><p class="p22">KAGER TIL ALLE TIDER</p></a></li>
+                    <li><a href="kaffe.html"><p class="p22">VORES KAFFE</p></a></li>
+                    </div>
+
+    
+                    <div class="menu_fold_ud_højre">
+                    <div class="sub_menu_center">
+                    <li id="omOsItem"><a href="#" class="om_os"><p class="p22">OM OS</p></a></li>
+    
+                    <div class="sub_menu">
+                        <li><a href="404_error.html"><p>HISTORIE</p></a></li>
+                        <li><a href="medarbejdere.html"><p>MEDARBEJDERE</p></a></li>
+                        </div>
+
+                    </div>
+    
+                    <li>
+                        <div class="kasse_knap">
+                            <a href="bestil.html">
+                            <div class="kasse_knap_kant">
+                                <p class="bestil_knap_skrift">BESTIL ONLINE</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    </div>
+    
+                    <div class="burger_some">
+                        <a target="_blank" href="https://www.instagram.com/schweizerbageriet/?hl=da"><img src="img/instagram.png" alt="Instagram link"></a>
+                        <a target="_blank" href="https://www.facebook.com/Schweizerbageriet/"><img src="img/facebook.png" alt="Facebook link"></a>
+                        <a target="_blank" href="https://twitter.com/?lang=da"><img src="img/twitter.png" alt="Twitter link"></a>
+                    </div>
+    
+                </ul>
+            </nav>
+        </header>
+
+
+<main>
+        <!--Her skal kathrines logoer ind-->
+        <div class="kategori_flexbox">
+            <div class="kategori">
+                <a href="kage_kategori.html">
+                    <img src="img/kageikon.svg" alt="Kage">
+                    <p>Kage</p>
+                </a>
+            </div>
+
+            <div class="kategori">
+                <a href="kaffe_kategori.html">
+                    <img src="img/kaffeikon.svg" alt="Kaffe">
+                    <p>Kaffe</p>
+                </a>
+            </div>
+
+            <div class="kategori">
+                <a href="broed_kategori.html">
+                    <img src="img/broedikon.svg" alt="Brød">
+                    <p>Brød</p>
+                </a>
+            </div>
+
+            <div class="kategori">
+                <a href="sandwich_kategori.html">
+                    <img src="img/sandwichudfyldtikon.svg" alt="Sandwich">
+                    <p>Sandwich</p>
+                </a>
+            </div>
+        </div>
+        <!--resten af indholdet-->
+
+        <h2 class="sandwich_side">SANDWICH</h2>
+        
+        <div class="alle_sandwich">
+
+            <!--Sandwich box 1-->
+            
+                <div class="container_dropdownvalg">
+    
+                    <div class="mad_kort">
+                        <h3 class="gul_overskrift_center">Sandwich med serrano</h3>
+                        <img src="img/sandwichseranno.jpg" alt="billede af sandwich med serano" class="kort_billeder">
+                        <h3 class="pris">59,-</h3>
+                        <p>Sandwich med pesto, spinat, serrano, mozzarella og soltørret tomat.</p>
+    
+                   
+                        <select name="brød" class="dropdown_tilbehør">
+                            <optgroup label="Vælg brød">
+                                <option value="Lys Baguette">Lys baguette</option>
+                                <option value="Grov Baguette">Grov baguette</option>
+                                <option value="Gullerodsbolle">Gullerodsbolle</option>
+                            </optgroup>
+                        </select>
+                    
+                        <select name="dressing" class="dropdown_tilbehør">
+                            <optgroup label="Vælg dressing">
+                                <option value="Pesto">Pesto</option>
+                                <option value="Chili mayo">Chili mayo</option>
+                                <option value="Karrydressing">Karrydressing</option>
+                            </optgroup>
+                        </select>
+                
+        
+    
+                        <select name="tilbehør" class="dropdown_tilbehør">
+                            <optgroup label="Vælg tilbehør">
+                                <option value="tilbehør">Ingen tilbehør</option>
+                                <option value="Bacon">Bacon</option>
+                                <option value="Ekstra dressing">Ekstra dressing</option>
+                                <option value="Whatever">Whatever</option>
+                            </optgroup>
+                        </select>
+    
+                        
+                        <div class="inden_kurv">
+                            <div class="antal">
+                                <!--Hvis vi gerne vil have en overskrift på, skal vi bare bruge det nedenunder og sætte alt andet i sin egen div-->
+                                <!--<label for="quantity">Vælg antal:</label>-->
+        
+                                <button class="quantity-btn decrement" onclick="decrement('quantity1')">-</button>
+                                <input type="text" id="quantity1" name="quantity" value="1" readonly>
+                                <button class="quantity-btn increment" onclick="increment('quantity1')">+</button>
+                            </div>
+        
+                            <div class="kurv">
+                                <div class="product" data-product-id="1">
+                                    <button onclick="addToCart(1)">Læg i kurv</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+            <!--Sandwich box 2-->
+    
+    
+                <div class="container_dropdownvalg">
+    
+                    <div class="mad_kort">
+                        <h3 class="gul_overskrift_center">Sandwich med skinke & ost</h3>
+                        <img src="img/sandwichskinkeost.jpg" alt="billede af sandwich med skinke og ost" class="kort_billeder">
+                        <h3 class="pris">49,-</h3>
+                        <p>Sandwich med skinke, ost og spinat.</p>
+    
+                    
+                        <select name="brød" class="dropdown_tilbehør">
+                            <optgroup label="Vælg brød">
+                                <option value="Gullerodsbolle">Gullerodsbolle</option>
+                                <option value="Lys Baguette">Lys baguette</option>
+                                <option value="Grov Baguette">Grov baguette</option>
+                            </optgroup>
+                        </select>
+                    
+                        <select name="dressing" class="dropdown_tilbehør">
+                            <optgroup label="Vælg dressing">
+                                <option value="Pesto">Pesto</option>
+                                <option value="Chili mayo">Chili mayo</option>
+                                <option value="Karrydressing">Karrydressing</option>
+                            </optgroup>
+                        </select>
+                
+        
+    
+                        <select name="tilbehør" class="dropdown_tilbehør">
+                            <optgroup label="Vælg tilbehør">
+                                <option value="tilbehør">Ingen tilbehør</option>
+                                <option value="Bacon">Bacon</option>
+                                <option value="Ekstra dressing">Ekstra dressing</option>
+                                <option value="Whatever">Whatever</option>
+                            </optgroup>
+                        </select>
+    
+                        <div class="inden_kurv">
+                            <div class="antal">
+                                <!--Hvis vi gerne vil have en overskrift på, skal vi bare bruge det nedenunder og sætte alt andet i sin egen div-->
+                                <!--<label for="quantity">Vælg antal:</label>-->
+        
+                                <button class="quantity-btn decrement" onclick="decrement('quantity2')">-</button>
+                                <input type="text" id="quantity2" name="quantity" value="1" readonly>
+                                <button class="quantity-btn increment" onclick="increment('quantity2')">+</button>
+                            </div>
+    
+                            <div class="kurv">
+                                <div class="product" data-product-id="1">
+                                    <button onclick="addToCart(1)">Læg i kurv</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+            <!--Sandwich box 3-->
+    
+    
+                <div class="container_dropdownvalg">
+    
+                    <div class="mad_kort">
+                    <h3 class="gul_overskrift_center">Sandwich med fennikelpølse</h3>
+                    <img src="img/sandwichfenikkelpolse.jpg" alt="billede af sandwich med fenikkelpølse" class="kort_billeder">
+                    <h3 class="pris">59,-</h3>
+                    <p>Sandwich med fennikelpølse, pesto og spinat.</p>
+    
+                    
+                    <select name="brød" class="dropdown_tilbehør">
+                        <optgroup label="Vælg brød">
+                            <option value="Lys Baguette">Lys baguette</option>
+                            <option value="Grov Baguette">Grov baguette</option>
+                            <option value="Gullerodsbolle">Gullerodsbolle</option>
+                        </optgroup>
+                    </select>
+                
+                    <select name="dressing" class="dropdown_tilbehør">
+                        <optgroup label="Vælg dressing">
+                            <option value="Pesto">Pesto</option>
+                            <option value="Chili mayo">Chili mayo</option>
+                            <option value="Karrydressing">Karrydressing</option>
+                        </optgroup>
+                    </select>
+            
+    
+
+                    <select name="tilbehør" class="dropdown_tilbehør">
+                        <optgroup label="Vælg tilbehør">
+                            <option value="tilbehør">Ingen tilbehør</option>
+                            <option value="Bacon">Bacon</option>
+                            <option value="Ekstra dressing">Ekstra dressing</option>
+                            <option value="Whatever">Whatever</option>
+                        </optgroup>
+                    </select>
+    
+                        <div class="inden_kurv">
+                            
+                            <div class="antal">
+                                <!--Hvis vi gerne vil have en overskrift på, skal vi bare bruge det nedenunder og sætte alt andet i sin egen div-->
+                                <!--<label for="quantity">Vælg antal:</label>-->
+        
+                                <button class="quantity-btn decrement" onclick="decrement('quantity3')">-</button>
+                                <input type="text" id="quantity3" name="quantity" value="1" readonly>
+                                <button class="quantity-btn increment" onclick="increment('quantity3')">+</button>
+                            </div>
+    
+                            <div class="kurv">
+                                <div class="product" data-product-id="1">
+                                    <button onclick="addToCart(1)">Læg i kurv</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+    
+    
+    
+    
+    
+    
+    
+    
+            <!--Sandwich box 4-->
+    
+    
+                <div class="container_dropdownvalg">
+                    <div class="mad_kort">
+                        <h3 class="gul_overskrift_center">Sandwich med kylling</h3>
+                        <img src="img/sandwichkylbac.jpg" alt="billede af sandwich med kylling og bacon" class="kort_billeder">
+                        <h3 class="pris">59,-</h3>
+                        <p>Sandwich med karry, salat, kylling, syltede løg og bacon</p>
+    
+                    
+                        <select name="brød" class="dropdown_tilbehør">
+                            <optgroup label="Vælg brød">
+                                <option value="Lys Baguette">Lys baguette</option>
+                                <option value="Grov Baguette">Grov baguette</option>
+                                <option value="Gullerodsbolle">Gullerodsbolle</option>
+                            </optgroup>
+                        </select>
+                    
+                        <select name="dressing" class="dropdown_tilbehør">
+                            <optgroup label="Vælg dressing">
+                                <option value="Karrydressing">Karrydressing</option>
+                                <option value="Pesto">Pesto</option>
+                                <option value="Chili mayo">Chili mayo</option>
+                            </optgroup>
+                        </select>
+                
+        
+    
+                        <select name="tilbehør" class="dropdown_tilbehør">
+                            <optgroup label="Vælg tilbehør">
+                                <option value="tilbehør">Ingen tilbehør</option>
+                                <option value="Bacon">Bacon</option>
+                                <option value="Ekstra dressing">Ekstra dressing</option>
+                                <option value="Whatever">Whatever</option>
+                            </optgroup>
+                        </select>
+    
+                        <div class="inden_kurv">
+                            <div class="antal">
+                                <!--Hvis vi gerne vil have en overskrift på, skal vi bare bruge det nedenunder og sætte alt andet i sin egen div-->
+                                <!--<label for="quantity">Vælg antal:</label>-->
+        
+                                <button class="quantity-btn decrement" onclick="decrement('quantity4')">-</button>
+                                <input type="text" id="quantity4" name="quantity" value="1" readonly>
+                                <button class="quantity-btn increment" onclick="increment('quantity4')">+</button>
+                            </div>
+    
+                            <div class="kurv">
+                                <div class="product" data-product-id="1">
+                                    <button onclick="addToCart(1)">Læg i kurv</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!--kurv-->
+
+        <div id="cart-container" class="cart-container">
+            <div class="cart-icon" onclick="goToCartPage()">
+                <img src="img/basket.png" alt="kurve ikon">
+                <div class="cart-count">
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!--kurv slut-->
+
+                    
+            
+                    
+    </main>
+            
+            
+    <footer>
+            
+        <div class="følg_os_container tid">
+            <p class="footer_overskrift">Åbningstider</p>
+            <div class="tider">
+                <div>
+                    <p class="footer_tekst">Man-fre</p>
+                    <p class="footer_tekst">Lør</p>
+                    <p class="footer_tekst">Søn</p>
+                </div>
+
+                <div>
+                    <p class="footer_tekst">06:30-17:30</p>
+                    <p class="footer_tekst">06:30-17:00</p>
+                    <p class="footer_tekst">06:30-14:00</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="følg_os_container følg">
+            <p class="footer_overskrift">Følg os</p>
+            <div class="følg_os">
+                <a target="_blank" href="https://www.instagram.com/schweizerbageriet/?hl=da"><img src="img/instagram.png" alt="Instagram icon"></a>
+                <a target="_blank" href="https://www.facebook.com/Schweizerbageriet/"><img src="img/facebook.png" alt="Facebook icon"></a>
+                <a target="_blank" href="https://twitter.com/?lang=da"><img src="img/twitter.png" alt="Twitter icon"></a>
+            </div>
+
+        </div>
+
+        <div class="følg_os_container kontakt">
+            <p class="footer_overskrift">Kontakt os</p>
+            <div class="kontakt_os">
+                <div class="nummer">
+                    <a target="_blank" href="https://www.google.com/maps/place/M.+P.+Bruuns+Gade+56,+8000+Aarhus/@56.1470518,10.2009748,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f8ea72b1779:0xa3eb09262300480b!8m2!3d56.1470518!4d10.2035497!16s%2Fg%2F11c1y8z3vr?entry=ttu" class="kontakt_info"><img src="img/location.png" alt="Lokation"></a>
+                    <p class="tlf">M. P. Bruuns Gade 56, 8000 Aarhus</p>
+                </div>
+
+                    
+
+                <div class="nummer">
+                    <a target="_blank" href="tel:86 12 34 47" class="kontakt_info"><img src="img/telephone.png" alt="Telefon icon"></a>
+                    <p class="tlf">86&nbsp;12&nbsp;34&nbsp;47</p>
+                </div>
+
+
+                <div class="nummer">
+                    <a target="_blank" href="mailto:bager@schweizerbageriet.dk" class="kontakt_info"><img src="img/email.png" alt="Email icon"></a>
+                    <p class="tlf">bager@schweizerbageriet.dk</p>
+                </div>
+
+            </div>
+
+                
+
+        </div>
+
+
+    
+
+
+</footer>
+            
+
+<!-- Javascript-->
+<script src="java/burger.js"></script>
+
+<script src="java/cart.js"></script>
+
+<script src="java/knapper.js"></script>
+
+<!-- Javascript slut-->
+ 
+</body>
+</html>

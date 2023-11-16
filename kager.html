@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta description-->
+    <meta name="description" content="Forsiden i mobile first projektet. SchweizerBageriets forside, som viser kager, kaffe, medarbejdere og den lange historie der er forbundet med dem.">
+    <!--meta description slut-->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/Schweizerbageriet-favicon.png">
+    <title>Forside | Mobile first</title>
+</head>
+<body>
+
+        <header>
+
+            <div class="burger-menu">
+                
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+        
+
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><img src="img/Schweizerbagerietcopy.png" alt="logo"></a>
+            </div>
+
+
+            <nav>
+    
+                    <ul>
+                    <div class="menu_fold_ud_venstre">
+                    <li><a href="kager.html"><p class="p22">KAGER TIL ALLE TIDER</p></a></li>
+                    <li><a href="kaffe.html"><p class="p22">VORES KAFFE</p></a></li>
+                    </div>
+
+    
+                    <div class="menu_fold_ud_højre">
+                    <div class="sub_menu_center">
+                    <li id="omOsItem"><a href="#" class="om_os"><p class="p22">OM OS</p></a></li>
+    
+                    <div class="sub_menu">
+                        <li><a href="404_error.html"><p>HISTORIE</p></a></li>
+                        <li><a href="medarbejdere.html"><p>MEDARBEJDERE</p></a></li>
+                        </div>
+
+                    </div>
+    
+                    <li>
+                        <div class="kasse_knap">
+                            <a href="bestil.html">
+                            <div class="kasse_knap_kant">
+                                <p class="bestil_knap_skrift">BESTIL ONLINE</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    </div>
+    
+                    <div class="burger_some">
+                        <a target="_blank" href="https://www.instagram.com/schweizerbageriet/?hl=da"><img src="img/instagram.png" alt="Instagram link"></a>
+                        <a target="_blank" href="https://www.facebook.com/Schweizerbageriet/"><img src="img/facebook.png" alt="Facebook link"></a>
+                        <a target="_blank" href="https://twitter.com/?lang=da"><img src="img/twitter.png" alt="Twitter link"></a>
+                    </div>
+    
+                </ul>
+            </nav>
+        </header>
+
+
+    <main>
+
+        <div class="menubillede_container banner">
+            <img src="img/Kager_til_alle_tider.jpg" alt="Snow"  class="bannerbillede" width="500" height="221">
+            <div class="centered"><h1 class="billedlink_skrift_overskrift">KAGER TIL ALLE TIDER</h1></div>
+            </a>
+          </div>
+        
+
+        <div class="flexbox-container">
+
+                <h1 class="underskrift_billede_blue">NÅR KAGEN SKAL VÆRE SÆRLIG</h1>
+                <p class="mod_venstre">
+                    Hos SchweizerBageriet laver vi hver dag kager til alle livets 
+                    små og store fester. Vores chefkonditor Cecilie Keseler går 
+                    aldrig på kompromis med kvaliteten. Det gælder alt, fra 
+                    hjemmelavede marmelader til det håndlavede chokoladepynt af 
+                    ægte belgisk chokolade.Click på billederne for at se vores sortiment og priser.
+                    <br> <br>
+                    Klik på billederne for at se vores sortiment og priser.
+                </p>
+
+            <div class="menubillede_flexbox">
+    
+                    
+                    <!-- Image container 2 with text -->
+                    <div class="image-container billede1" onclick="toggleText('tapaskager')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Tapaskager</h3>
+                            <img src="img/tapas_kager.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+                            <div class="image-text" id="tapaskager"><p class="mod_venstre_tyk">TAPASKAGER</p> 
+                                <p class="mod_venstre">Flere varianter: 15,- pr. stk</p>
+                            </div>    
+                        </div>
+                    </div>
+
+                    
+                    <!-- Image container 2 with text -->
+                    <div class="image-container billede2" onclick="toggleText('lagkager')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Lagkage</h3>
+                            <img src="img/othello_lagkage.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+                            <div class="image-text" id="lagkager"><p class="mod_venstre_tyk">OTHELLO LAGKAGE</p> 
+                                <p class="mod_venstre">Lyse lagkagebunde, hindbærmarmelade, makroner og vaniljeflødecreme.<br>
+                                12, 20, 40 eller 60 pers. kr. 360,-/600,-/1.200,-/1.800,-</p>
+                            </div>    
+                        </div>
+                    </div>
+
+                    
+                    <!-- Image container 3 with text -->
+                    <div class="image-container billede3" onclick="toggleText('chokolade')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Chokoladekager</h3>
+                            <img src="img/chokolade.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+                            <div class="image-text" id="chokolade"><p class="mod_venstre_tyk">CHOKOLADEKAGE</p>
+                                <p class="mod_venstre">Chokolade- og karameltopping.<br>
+                                25 eller 50 person. kt. 350,-/650,-</p>
+                            </div>    
+                        </div>
+                    </div>
+
+                    
+                    <!-- Image container 4 with text -->
+                    <div class="image-container billede4" onclick="toggleText('kagemand')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Kagemand</h3>
+                            <img src="img/kagemand_bedre_kvali.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+                            <div class="image-text" id="kagemand"><p class="mod_venstre_tyk">KAGEMAND</p>
+                                <p class="mod_venstre">Vælg mellem wienerdej, brunsviger og hindbærsnitte.<br>
+                                Kr. 285,- Slik på kagen + kr. 20,-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Image container 5 with text -->
+                    <div class="image-container billede5" onclick="toggleText('student')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Til Studenten</h3>
+                            <img src="img/studenterhue.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+                            <div class="image-text" id="student"><p class="mod_venstre_tyk">STUDENTERHUE</p>
+                                <p class="mod_venstre">Chokoladekage med ganachecreme med hindbær, karamel eller 
+                                chokolade. Som foto pyntet med bær, <br>
+                                12 pers. kr. 495,- Pyntet med marcipan og navn, 12 pers. kr. 395,-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Image container 6 with text -->
+                    <div class="image-container billede6" onclick="toggleText('frugtkage')">
+                        <div class=" menu_billede_lille_container med_gul_skrift">
+                        <h3 class="gul_overskrift">Frugtkage</h3>
+                            <img src="img/frugtkage.jpg" alt="Snow" width="260" height="221" class="menu_billede_lille">
+
+                            <div class="image-text" id="frugtkage">
+                                <p class="mod_venstre_tyk"> SCHWEIZER FRUGTKAGE</p>
+                                <p class="mod_venstre">Mazarinbund, vaniljeflødecreme og masser af frisk frugt.<br>
+                            20, 40 eller 60 pers. Pr. pers. kr. 49,-</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>         
+        
+        </div>
+    </main>
+
+
+    <footer>
+            
+        <div class="følg_os_container tid">
+            <p class="footer_overskrift">Åbningstider</p>
+            <div class="tider">
+                <div>
+                    <p class="footer_tekst">Man-fre</p>
+                    <p class="footer_tekst">Lør</p>
+                    <p class="footer_tekst">Søn</p>
+                </div>
+
+                <div>
+                    <p class="footer_tekst">06:30-17:30</p>
+                    <p class="footer_tekst">06:30-17:00</p>
+                    <p class="footer_tekst">06:30-14:00</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="følg_os_container følg">
+            <p class="footer_overskrift">Følg os</p>
+            <div class="følg_os">
+                <a target="_blank" href="https://www.instagram.com/schweizerbageriet/?hl=da"><img src="img/instagram.png" alt="Instagram icon"></a>
+                <a target="_blank" href="https://www.facebook.com/Schweizerbageriet/"><img src="img/facebook.png" alt="Facebook icon"></a>
+                <a target="_blank" href="https://twitter.com/?lang=da"><img src="img/twitter.png" alt="Twitter icon"></a>
+            </div>
+
+        </div>
+
+        <div class="følg_os_container kontakt">
+            <p class="footer_overskrift">Kontakt os</p>
+            <div class="kontakt_os">
+                <div class="nummer">
+                    <a target="_blank" href="https://www.google.com/maps/place/M.+P.+Bruuns+Gade+56,+8000+Aarhus/@56.1470518,10.2009748,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f8ea72b1779:0xa3eb09262300480b!8m2!3d56.1470518!4d10.2035497!16s%2Fg%2F11c1y8z3vr?entry=ttu" class="kontakt_info"><img src="img/location.png" alt="Lokation"></a>
+                    <p class="tlf">M. P. Bruuns Gade 56, 8000 Aarhus</p>
+                </div>
+
+                    
+
+                <div class="nummer">
+                    <a target="_blank" href="tel:86 12 34 47" class="kontakt_info"><img src="img/telephone.png" alt="Telefon icon"></a>
+                    <p class="tlf">86&nbsp;12&nbsp;34&nbsp;47</p>
+                </div>
+
+
+                <div class="nummer">
+                    <a target="_blank" href="mailto:bager@schweizerbageriet.dk" class="kontakt_info"><img src="img/email.png" alt="Email icon"></a>
+                    <p class="tlf">bager@schweizerbageriet.dk</p>
+                </div>
+
+            </div>
+
+                
+
+        </div>
+
+
+    
+
+
+</footer>
+
+<!-- Javascript-->
+<script src="java/burger.js"></script>
+
+<script src="java/skrift.js"></script>
+
+<!-- Javascript slut-->
+
+
+</body>
+</html>
